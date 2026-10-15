@@ -7,8 +7,8 @@ export function Header(){
             <div className="container">
                 <div className="informacion-contacto">
                     <span className="text-align">📍Av. Siempreviva #123 Santiago, Chile  </span>
-                    <Link to="mailto:carl.labbe@duocuc.cl">✉️contacto@veterinariasanmarcos.cl  </Link>
-                    <Link to="tel:+56912345678">☎+569 1234 5678  </Link>
+                    <a href="mailto:carl.labbe@duocuc.cl">✉️contacto@veterinariasanmarcos.cl  </a>
+                    <a href="tel:+56912345678">☎+569 1234 5678  </a>
                     <span>🕒Lunes a Domingo 24hrs</span>
                 </div>
             </div>
@@ -21,10 +21,10 @@ export function Header(){
                 </Link>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="inicio-sesion.html">Ingresa</Link>
+                        <a className="nav-link" href="inicio-sesion.html">Ingresa</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="ubicacion.html">Encuéntranos</Link>
+                        <a className="nav-link" href="ubicacion.html">Encuéntranos</a>
                     </li>
                     <li className="nav-item dropdown">
                         <Link className="nav-link dropdown-toggle" to="#" role="button"
