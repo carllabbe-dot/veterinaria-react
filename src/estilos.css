@@ -1,4 +1,3 @@
-
 :root {
     --verde-principal: #5F8F7B;
     --verde-oscuro: #3F6B5A;
@@ -8,7 +7,7 @@
     --blanco: #FFFFFF;
     --morado-topbar: #6f42c1;
     --naranja-botones: darkorange;
-    --sombras:#343A40; 
+    --sombras: #343A40;
 }
 
 body {
@@ -29,32 +28,36 @@ body {
 
 .navbar {
     background-color: var(--blanco);
-    
+
 }
-h1,h2,h3{
-    font-family: "Poppins",sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
 }
-h3{
-    color:var(--verde-principal)
+
+h3 {
+    color: var(--verde-principal)
 }
 
 .logo-navbar {
-    width:120px;
+    width: 120px;
     height: auto;
-    
+
 }
 
 .nav-link {
     color: var(--verde-oscuro);
     font-size: larger;
-    
+
 }
 
 .nav-link:hover {
     color: var(--verde-principal);
     font-weight: bolder;
-    text-decoration:dashed;
-    text-shadow: var(--sombras) ;
+    text-decoration: dashed;
+    text-shadow: var(--sombras);
 }
 
 .top-bar {
@@ -75,10 +78,17 @@ h3{
     color: var(--blanco);
     text-decoration: none;
 }
-.informacion-contacto{
-    color:var(--crema);
+
+.informacion-contacto {
+    color: var(--crema);
     font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
 .urgencias-banner {
     background-image: url("/images/Nina.jpeg");
     background-size: cover;
@@ -93,10 +103,6 @@ h3{
 
     border-radius: 30px;
 }
-.imagen-agenda{
-    flex:auto;
-    border-radius: 30px;
-}
 
 .urgencias-contenido {
     background-color: rgba(63, 107, 90, 0.45);
@@ -106,6 +112,7 @@ h3{
     color: white;
 }
 
+
 .urgencias-contenido h2 {
     font-size: 45px;
     font-weight: bold;
@@ -113,57 +120,76 @@ h3{
     line-height: 1.05;
     margin-bottom: 30px;
 
-}
-.bloque-info{
-    border:1px solid var(--verde-principal);
-    border-radius:15px;
+    .imagen-agenda {
+        flex: auto;
+        border-radius: 30px;
+    }
 
-    padding:30px;
 
-    height:100%;
 }
-.bloque-info h2{
-    font-size:28px;
-    margin-bottom: 20px;
-}
-.bloque-info p{
-    font-size: 16px;
-}
-.cuadro-imagen{
+
+
+.bloque-info {
+    border: 1px solid var(--verde-principal);
+    border-radius: 15px;
+
+    padding: 30px;
+
     height: 100%;
 }
-.cuadro-imagen img{
-    width:100%;
-    height:100%;
+
+.bloque-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.bloque-info p {
+    font-size: 16px;
+}
+
+.cuadro-imagen {
+    height: 100%;
+}
+
+.cuadro-imagen img {
+    width: 100%;
+    height: 100%;
 
     object-fit: cover;
     border-radius: 35px;
 }
-.btn{
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    background-color:var(--naranja-botones);
+
+.btn {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: var(--naranja-botones);
     height: 55px;
-    font-size:larger;
-    font-family:Arial, Helvetica, sans-serif;
-   
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--verde-principal);
 }
-body{
+
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-main{
-    flex:1;
+
+main {
+    flex: 1;
 }
-footer{
-    width:100%;
+
+footer {
+    width: 100%;
 }
-#titulo-cita{
-    color:var(--naranja-botones)
+
+#titulo-cita {
+    color: var(--naranja-botones)
 }
+
 #btn-inicio-sesion {
     width: auto;
     min-width: 120px;
