@@ -8,15 +8,24 @@ import { Cita } from './pages/cita.jsx'
 import { CitaAgendada } from './pages/cita-agendada.jsx'
 
 import './estilos.css'
-
+import { InicioSesion } from './pages/inicio-sesion.jsx'
+import { Administrador } from './pages/admin/adminstrador.jsx'
+import { RutaAdministrador } from './components/ruta-administrador.jsx';
+import { Urgencias } from './pages/urgencias.jsx'
+import { Vacunas } from './pages/vacunas.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path='' element={<Inicio/>} />
-        <Route path='/cita' element={<Cita/>}/>
-        <Route path='/citaagendada' element={<CitaAgendada/>}/>
+        <Route path="" element={<Inicio />} />
+        <Route path="/cita" element={<Cita />} />
+        <Route path="/citaagendada" element={<CitaAgendada />} />
+        <Route path="/urgencias" element={<Urgencias/>}/>
+        <Route path="/vacunas" element={<Vacunas/>}/>
+        <Route path="/inicio-sesion" element={<InicioSesion />}/>
+       //admin@tienda.cl "administrador"
+        <Route path="/administrador" element={<RutaAdministrador><Administrador/></RutaAdministrador>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
