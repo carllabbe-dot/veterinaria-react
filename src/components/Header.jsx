@@ -21,17 +21,17 @@ export function Header(){
                 </Link>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="inicio-sesion.html">Ingresa</a>
+                        <Link className="nav-link" to="/inicio-sesion">Ingresa</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="ubicacion.html">Encuéntranos</a>
+                        <Link className="nav-link" to="https://maps.app.goo.gl/SaEEcY8YGzEsQJ4y8">Encuéntranos</Link>
                     </li>
                     <li className="nav-item dropdown">
                         <Link className="nav-link dropdown-toggle" to="#" role="button"
                             data-bs-toggle="dropdown">Servicios</Link>
                         <ul className="dropdown-menu">
-                            <li><Link className="dropdown-item" to="#">Vacunas</Link></li>
-                            <li><Link className="dropdown-item" to="#">Urgencia</Link></li>
+                            <li><Link className="dropdown-item" to="/vacunas">Vacunas</Link></li>
+                            <li><Link className="dropdown-item" to="/urgencias">Urgencia</Link></li>
                         </ul>
 
                     </li>
