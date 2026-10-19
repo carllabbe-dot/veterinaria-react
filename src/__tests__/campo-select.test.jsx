@@ -5,9 +5,34 @@ describe('CampoSelect', () => {
 
     test('crea una opción por cada elemento del arreglo, más la opción inicial', () => {
         render(<CampoSelect id="tipo" label="Tipo" name="tipo" texto="Selecciona tipo"
-            opciones={['Perro', 'Gato', 'Exótico']} value="" onChange={() => {}} />);
+            opciones={['Perro', 'Gato', 'Exótico']} value="" onChange={() => { }} />);
 
         expect(screen.getAllByRole('option')).toHaveLength(4);
         expect(screen.getByRole('option', { name: 'Selecciona tipo' })).toBeInTheDocument();
     });
-});
+    test('muestra un mensaje de error cuando recibe una propiedad error', () => {
+        render(
+            <CampoSelect
+                id="tipo"
+                label="Tipo"
+                name="tipo"
+                texto="Selecciona tipo"
+                opciones={['Perro', 'Gato', 'Exótico']}
+                value=""
+                error="Debe seleccionar una mascota"
+                onChange={() => { }}
+            />
+        );
+
+        expect(
+            screen.getByText('Debe seleccionar una mascota')
+        ).toBeInTheDocument();
+
+        expect(
+            screen.getByRole('combobox')
+        ).toHaveClass('is-invalid');
+    })
+
+        ;
+})
+    ;

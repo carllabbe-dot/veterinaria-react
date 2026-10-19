@@ -64,4 +64,28 @@ describe('Formulario de Cita', () => {
         expect(screen.getByText('Ingrese un correo electrónico válido')).toBeInTheDocument();
         expect(mockNavigate).not.toHaveBeenCalled();
     });
+
+    test('con un teléfono inválido muestra error y NO navega', async () => {
+        const user = userEvent.setup();
+
+        render(<Cita />);
+
+        await user.type(
+            screen.getByLabelText(/^teléfono$/i),
+            '12345678'
+        );
+
+        await user.click(
+            screen.getByRole('button', { name: /agendar cita/i })
+        );
+
+        expect(
+            screen.getByText(
+                'Ingrese un teléfono válido (+569XXXXXXXX)'
+            )
+        ).toBeInTheDocument();
+
+        expect(mockNavigate).not.toHaveBeenCalled();
+    });
+
 });
