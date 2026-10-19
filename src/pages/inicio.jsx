@@ -13,11 +13,11 @@ export function Inicio() {
                     </h2>
 
                     <p>
-                            Sabemos lo importante que es tu mascota y lo impredecible que es un accidente,
+                        Sabemos lo importante que es tu mascota y lo impredecible que es un accidente,
                         por lo que en Veterinaria San Marcos estamos las 24 horas de la semana abiertos
                         y dispuestos para ayudar a tu cachorro.
                         <br />
-                        
+
                         Agenda tu hora con nosotros y deja en nuestras manos a quien más amas.
                     </p>
                 </div>
